@@ -20,4 +20,4 @@ grep -qxF "$LINE" "$HOME/.bashrc" || echo "$LINE" >> "$HOME/.bashrc"
 git -C "$DOTFILES_DIR" submodule update --init --recursive
 # ホームディレクトリにclaude個人用ディレクトリを作成
 mkdir -p "$HOME/.claude"
-ln -sf "$DOTFILES_DIR/skills" "$HOME/.claude/skills"
+ln -sf "$DOTFILES_DIR/skills" "$HOME/.claude/"
