@@ -13,7 +13,7 @@ mkdir -p "$HOME/.config"
 ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
 
 # .bashrc に .bashrc.local を読み込む行を一度だけ追加
-LINE='[ -f ~/dotfiles/.bashrc.local ] && source ~/dotfiles/.bashrc.local'
+LINE='[ -f ~/dotfiles_devcontainer/.bashrc.local ] && source ~/dotfiles_devcontainer/.bashrc.local'
 grep -qxF "$LINE" "$HOME/.bashrc" || echo "$LINE" >> "$HOME/.bashrc"
 
 # git submodule を初期化して更新(--remoteでsubmodule側リポジトリの最新を取る)
